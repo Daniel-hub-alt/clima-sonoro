@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clima Musical</title>
+  <link rel="stylesheet" href="clima.css">
+  <link rel="icon" href="Logo.png"> 
+</head>
+<body>
+  <div id="efeito-clima"></div>
+  <div class="container" id="container">
+    <h1>Clima Musical 🌧️🎶</h1>
+    <input type="text" id="cidade" placeholder="Digite a cidade..." />
+    <button id="buscar">Buscar clima</button>
+    <div id="resultado"></div>
+  </div>
+  
+  <div id="player-musica" style="display: none;">
+    <img src="musicas.png" alt="Song" id="imagem-musica">
+    <h3>Música do clima 🎵</h3>
+    <audio id="musica" controls></audio>
+    
+    <div class="controles-extra">
+      <button id="voltar">⏪ Voltar 5s</button>
+      <button id="avancar">⏩ Avançar 5s</button>
+      <button id="loop">🔁 Loop: Desligado</button>
+    </div>
+  </div>
+
+  <div id="API_ERRO">
+    <p>⚠️ As informações são fornecidas por uma API externa e podem conter imprecisões.</p>
+  </div>
+  
+  <script src="clima.js"></script>
+</body>
+</html>
